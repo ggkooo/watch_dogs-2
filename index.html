@@ -1,13 +1,62 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>watch_dogs-2</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Explore Watch Dogs 2 with DedSec: features, media, community updates, and game editions in a fast cyberpunk-themed experience."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#0a0a0c" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="DedSec | Take Back The City" />
+        <meta
+            property="og:description"
+            content="Explore Watch Dogs 2 with DedSec: features, media, community updates, and game editions."
+        />
+        <meta property="og:image" content="/src/assets/logo-01.png" />
+        <meta property="og:locale" content="en_US" />
+        <title>DedSec | Take Back The City</title>
+
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#00f0ff',
+                            secondary: '#7000ff',
+                            'background-light': '#f4f4f5',
+                            'background-dark': '#0a0a0c',
+                            'surface-dark': '#16161a',
+                            'accent-glow': 'rgba(0, 240, 255, 0.3)',
+                        },
+                        fontFamily: {
+                            display: ['Orbitron', 'sans-serif'],
+                            mono: ['JetBrains Mono', 'monospace'],
+                        },
+                        borderRadius: {
+                            DEFAULT: '4px',
+                        },
+                    },
+                },
+            }
+        </script>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+    </head>
+    <body>
+        <div id="root"></div>
+        <noscript>
+            This app requires JavaScript to run. Browse game highlights: Hero, Features, Media, News, and Editions.
+        </noscript>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
